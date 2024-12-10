@@ -5,7 +5,6 @@ import { ModeToggle } from "@/components/mode-toggle"
 function App() {
 
   return ( 
-    // you can delete it and replace with your own code
     <ThemeProvider>
     <main className="flex flex-col justify-center items-center min-h-screen space-y-10">
       <ModeToggle /> 

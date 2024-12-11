@@ -1,17 +1,21 @@
-import { ThemeProvider } from "@/components/theme-provider"
-import { ModeToggle } from "@/components/mode-toggle"
-import LoremIpsuming from "@/components/loremipsuming"
+import LoremIpsuming from "@/components/loremipsuming";
+import { ModeToggle } from "@/components/mode-toggle";
+import { ThemeProvider } from "@/components/theme-provider";
 
 function App() {
-
-  return ( 
+  return (
     <ThemeProvider>
-    <main className="flex flex-col justify-center items-center min-h-screen space-y-10">
-      <ModeToggle /> 
-      <LoremIpsuming/>
-    </main>
-  </ThemeProvider>
-  )
+      <div>
+        <header className="p-4 flex justify-between items-center border-b">
+          <h1 className="ml-2 text-2xl font-bold">Loremipsuming.</h1>
+          <ModeToggle />
+        </header>
+        <div>
+          <LoremIpsuming />
+        </div>
+      </div>
+    </ThemeProvider>
+  );
 }
 
-export default App
+export default App;

@@ -5,7 +5,7 @@ import { ThemeProvider } from "@/components/theme-provider";
 function App() {
   return (
     <ThemeProvider>
-      <div>
+      <div className="max-h-screen">
         <header className="p-4 flex justify-between items-center border-b">
           <h1 className="ml-2 text-2xl font-bold">Loremipsuming.</h1>
           <ModeToggle />

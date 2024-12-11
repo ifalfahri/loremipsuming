@@ -60,7 +60,7 @@ export default function LoremIpsuming() {
   }
 
   return (
-    <div className="min-h-screen bg-background flex items-center justify-center p-4">
+    <div className="flex items-center justify-center p-4">
       <Card className="w-full max-w-3xl">
         <CardHeader>
           <CardTitle>Elegant Lorem Ipsum Generator</CardTitle>

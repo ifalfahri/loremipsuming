@@ -63,7 +63,7 @@ export default function LoremIpsuming() {
     <div className="flex items-center justify-center p-4">
       <Card className="w-full max-w-3xl">
         <CardHeader>
-          <CardTitle>Elegant Lorem Ipsum Generator</CardTitle>
+          <CardTitle>LoremIpsuming</CardTitle>
           <CardDescription>Generate Lorem Ipsum text in various formats</CardDescription>
         </CardHeader>
         <CardContent>

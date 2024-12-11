@@ -55,7 +55,7 @@ export default function LoremIpsuming() {
     navigator.clipboard.writeText(generatedText)
     toast({
       title: "Copied to clipboard",
-      description: "The generated text has been copied to your clipboard.",
+      description: "The lorem ipsum text has been copied to your clipboard.",
     })
   }
 

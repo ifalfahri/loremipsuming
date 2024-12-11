@@ -113,7 +113,7 @@ export default function LoremIpsuming() {
           </form>
           {generatedText && (
             <div className="mt-6 relative">
-              <div className="bg-muted rounded-md p-4 max-h-96 overflow-y-auto">
+              <div className="bg-muted rounded-md p-4 max-h-72 overflow-y-auto">
                 {generateType === 'lists' ? (
                   <ol className="list-decimal list-inside space-y-2">
                     {generatedText.split('\n').map((item, index) => (

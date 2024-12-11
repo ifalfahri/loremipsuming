@@ -15,8 +15,8 @@ function App() {
           <LoremIpsuming />
         </div>
         <footer className="bottom-0 fixed mx-auto w-full p-4 flex justify-center items-center">
-        <p>&copy; 2024 Loremipsuming. All rights reserved.</p>
-    </footer>
+          <p>&copy; 2024 Loremipsuming. All rights reserved.</p>
+        </footer>
       </div>
       <Toaster />
     </ThemeProvider>

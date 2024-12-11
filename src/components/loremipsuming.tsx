@@ -30,23 +30,43 @@ export default function LoremIpsuming() {
   const { toast } = useToast()
 
   const generateLoremIpsum = () => {
+    const prefix = 'Lorem ipsum dolor sit amet, '
     let result = ''
+    
     switch (generateType) {
       case 'paragraphs':
         result = lorem.generateParagraphs(count)
+        result = prefix + result.substring(result.indexOf(' ') + 1)
         break
       case 'sentences':
         result = lorem.generateSentences(count)
+        result = prefix + result.substring(result.indexOf(' ') + 1)
         break
-      case 'words':
-        result = lorem.generateWords(count)
-        break
+        case 'words':
+            if (count <= 5) {
+              result = 'Lorem ipsum dolor sit amet'
+            } else {
+              const remainingWords = count - 5 // subtract "Lorem ipsum dolor sit amet"
+              result = 'Lorem ipsum dolor sit amet, ' + lorem.generateWords(remainingWords)
+            }
+            // Verify exact word count
+            const words = result.split(' ')
+            if (words.length > count) {
+              result = words.slice(0, count).join(' ')
+            }
+            break
       case 'lists':
-        result = Array.from({ length: count }, (_, i) => `${i + 1}. ${lorem.generateSentences(1)}`).join('\n')
+        const firstSentence = prefix + lorem.generateSentences(1).substring(lorem.generateSentences(1).indexOf(' ') + 1)
+        const restOfList = Array.from({ length: count - 1 }, (_, i) => `${i + 2}. ${lorem.generateSentences(1)}`)
+        result = [`1. ${firstSentence}`, ...restOfList].join('\n')
         break
-      case 'bytes':
-        result = lorem.generateParagraphs(Math.ceil(count / 100)).slice(0, count)
-        break
+        case 'bytes':
+            let bytesText = prefix
+            while (bytesText.length < count) {
+              bytesText += ' ' + lorem.generateWords(3)
+            }
+            result = bytesText.slice(0, count)
+            break
     }
     setGeneratedText(result)
   }

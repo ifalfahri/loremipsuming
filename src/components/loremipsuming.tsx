@@ -36,7 +36,7 @@ export default function LoremIpsuming() {
   const { toast } = useToast();
 
   const generateLoremIpsum = () => {
-    const prefix = "Lorem ipsum dolor sit amet, ";
+    const prefix = "Lorem ipsum dolor sit amet ";
     let result = "";
 
     switch (generateType) {
@@ -54,7 +54,7 @@ export default function LoremIpsuming() {
         } else {
           const remainingWords = count - 5; // subtract "Lorem ipsum dolor sit amet"
           result =
-            "Lorem ipsum dolor sit amet, " +
+            "Lorem ipsum dolor sit amet " +
             lorem.generateWords(remainingWords);
         }
         // Verify exact word count

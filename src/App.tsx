@@ -15,7 +15,7 @@ function App() {
           <LoremIpsuming />
         </div>
         <footer className="bottom-0 fixed mx-auto w-full p-4 flex justify-center items-center">
-          <p>&copy; 2024 <a href="https://github.com/ifalfahri/loremipsuming" className="hover:bg-muted">Loremipsuming</a>. All rights reserved.</p>
+          <p>&copy; 2024 <a href="https://github.com/ifalfahri/loremipsuming" className="hover:text-primary/50 transition-colors">Loremipsuming</a>. All rights reserved.</p>
         </footer>
       </div>
       <Toaster />

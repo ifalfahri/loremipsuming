@@ -10,6 +10,16 @@
 
 > A loremipsum generator.
 
+## Features
+- Generate Lorem Ipsum text in form of
+  - Paragraph
+  - Sentence
+  - Word
+  - List
+  - Bytes
+- Copy to Clipboard
+- Dark mode
+
 ## 💡 Tech Stack
 - Vite for fast bundling and development.
 - React for building interactive UIs.
@@ -18,4 +28,3 @@
 - shadcn/ui for pre-built UI components.
 - SWC for faster JavaScript compilation.
 - Bun for fast JavaScript runtime.
-- Theme change component ready to use.

@@ -10,7 +10,7 @@
 
 > A loremipsum generator.
 
-## 💡 Features
+## 💡 Tech Stack
 - Vite for fast bundling and development.
 - React for building interactive UIs.
 - Typescript for type safety and better developer experience.

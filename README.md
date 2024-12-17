@@ -18,4 +18,4 @@
   - List
   - Bytes
 - Copy to Clipboard
-- Dark mode
+- Dark/Light mode

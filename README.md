@@ -18,4 +18,4 @@
   - List
   - Bytes
 - Copy to Clipboard
-- Dark/Light mode
+- Theme Switcher

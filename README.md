@@ -19,3 +19,6 @@
   - Bytes
 - Copy to Clipboard
 - Theme Switcher
+
+## Live Demo
+https://loremipsuming.vercel.app
